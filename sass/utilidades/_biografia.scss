@@ -1,0 +1,16 @@
+/* Estilos de html Biografia */
+@import "variables";
+@import "mixin";
+@import "extend";
+
+.sectionBio {
+    background-color: $color-fondo;
+    padding-top: 15px;
+    padding-left: 30px;
+    }
+
+.fotobio {
+    @include medidas (400px, 450px);
+    @extend %img;
+    padding-bottom: 15px;
+    }

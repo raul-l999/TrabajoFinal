@@ -1,0 +1,187 @@
+// Import
+@import "utilidades/biografia";
+@import "utilidades/records";
+@import "utilidades/logros";
+@import "utilidades/fotos";
+@import "utilidades/variables";
+@import "utilidades/mixin.scss";
+@import "utilidades/extend";
+// Import de estilos para el footer
+@import "utilidades/footer";
+
+// NESTING
+
+//HEADER
+
+* {
+font-family: "Raleway", sans-serif;
+padding: 0;
+margin: 0;
+}
+
+header {
+background-color: $color-header;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 1rem;
+}
+
+
+//INICIO
+
+.mainInicio {
+@include medidas (100%, 100%);
+@extend %img;
+background-image: url(../imagenes/Fondo.jpg);
+
+}
+
+.intro {
+padding-top: 300px;
+padding-bottom: 350px;
+padding-left: 20px;
+color: $color-letras;
+text-shadow: 1px 2px rgba(0, 0, 0, 0.548);
+justify-content: center;
+}
+
+main {
+background-color: $color-fondo;
+  div {
+    h1 {
+      font-size: 70px;
+    }
+    p {
+      font-size: 28px;
+    }
+    img {
+      width: 60rem;
+    }
+  }
+}
+
+.nav-item:hover {
+  background-color: rgba(212, 212, 212, 0.316);
+  border-radius: 3px;
+}
+
+//MEDIAS QUERY
+//Mobile
+
+@media only screen and (max-width: 500px) {
+  
+  //Inicio
+  .mainInicio {
+    background-image: url(../imagenes/phone.jpg);
+    @include medidas (100%, 100%);
+    @extend %img;
+
+    .intro p {
+      font-size: 0;
+    }
+  }
+
+  .titulopag {
+    font-size: 0;
+  }
+
+  //Biografia
+  .sectionBio {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+
+  //Logros
+  .mainLog,
+  .mainRec {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .fotolog,
+  .fotorec {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .grid-container {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+  footer {
+      div {
+        font-size: 10px;
+      }
+      ul {
+        font-size: 10px;
+        padding-right: 15px;
+      }
+      a {
+        padding: 10px;
+      }
+  }
+
+//Tablet
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+  //Inicio
+  .mainInicio {
+    @include medidas (100%, 100%);
+    background-image: url(../imagenes/fondo-tablet.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .intro p {
+      font-size: 0;
+    }
+  }
+
+  .titulopag {
+    font-size: 0;
+  }
+
+  //Biografia
+  .sectionBio {
+    padding: 25px;
+    font-size: 15px;
+  }
+
+  //Logros
+  .mainLog,
+  .mainRec {
+    padding: 25px;
+    font-size: 15px;
+  }
+
+  .fotolog,
+  .fotorec .fotobio {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .grid-container {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+footer {
+  div {
+      font-size: 14px;
+  }
+  ul {
+      font-size: 14px;
+      padding-right: 20px;
+  }
+  a {
+      padding: 10px;
+  }
+}

@@ -1,0 +1,22 @@
+// Estilos html logros
+@import "variables";
+@import "mixin";
+
+.mainLog {
+    background-color: $color-fondo;
+    padding: 30px;
+ul {
+    list-style: circle;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+}
+
+.fotolog {
+    @include medidas (30rem, 30rem);
+    padding-left: 30px;
+}
+
+.fotolog {
+    padding-bottom: 15px;
+}

@@ -1,0 +1,6 @@
+//mixin
+
+@mixin medidas ($width, $heigh) {
+    width: $width;
+    height: $heigh;
+}

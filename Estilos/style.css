@@ -1,0 +1,268 @@
+/* Estilos de html Biografia */
+.grid-item {
+  border: 1px solid #ccc;
+}
+
+.mainInicio, .fotobio {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.sectionBio {
+  background-color: whitesmoke;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+.fotobio {
+  width: 400px;
+  height: 450px;
+  padding-bottom: 15px;
+}
+
+.mainRec {
+  background-color: whitesmoke;
+  padding: 15px;
+}
+.mainRec ul {
+  list-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.fotorec {
+  width: 35rem;
+  height: 25rem;
+  padding-left: 30px;
+}
+
+.mainLog {
+  background-color: whitesmoke;
+  padding: 30px;
+}
+.mainLog ul {
+  list-style: circle;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.fotolog {
+  width: 30rem;
+  height: 30rem;
+  padding-left: 30px;
+}
+
+.fotolog {
+  padding-bottom: 15px;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+}
+
+.mainInicio, .fotobio {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.grid-container {
+  padding: 15px 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+}
+
+.mainInicio, .fotobio {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.979);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+footer div {
+  color: whitesmoke;
+  height: 50%;
+  padding-left: 20px;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  font-size: 18px;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.mainInicio {
+  width: 100%;
+  height: 100%;
+  background-image: url(../imagenes/Fondo.jpg);
+}
+
+.intro {
+  padding-top: 300px;
+  padding-bottom: 350px;
+  padding-left: 20px;
+  color: white;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.548);
+  justify-content: center;
+}
+
+main {
+  background-color: whitesmoke;
+}
+main div h1 {
+  font-size: 70px;
+}
+main div p {
+  font-size: 28px;
+}
+main div img {
+  width: 60rem;
+}
+
+.nav-item:hover {
+  background-color: rgba(212, 212, 212, 0.316);
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 500px) {
+  .mainInicio {
+    background-image: url(../imagenes/phone.jpg);
+    width: 100%;
+    height: 100%;
+  }
+  .mainInicio .intro p {
+    font-size: 0;
+  }
+  .titulopag {
+    font-size: 0;
+  }
+  .sectionBio {
+    padding: 20px;
+    font-size: 15px;
+  }
+  .mainLog,
+  .mainRec {
+    padding: 20px;
+    font-size: 15px;
+  }
+  .fotolog,
+  .fotorec {
+    width: 20rem;
+    height: 20rem;
+  }
+  .grid-container {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+footer div {
+  font-size: 10px;
+}
+footer ul {
+  font-size: 10px;
+  padding-right: 15px;
+}
+footer a {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+  .mainInicio {
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagenes/fondo-tablet.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .mainInicio .intro p {
+    font-size: 0;
+  }
+  .titulopag {
+    font-size: 0;
+  }
+  .sectionBio {
+    padding: 25px;
+    font-size: 15px;
+  }
+  .mainLog,
+  .mainRec {
+    padding: 25px;
+    font-size: 15px;
+  }
+  .fotolog,
+  .fotorec .fotobio {
+    width: 25rem;
+    height: 25rem;
+  }
+  .grid-container {
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+footer div {
+  font-size: 14px;
+}
+footer ul {
+  font-size: 14px;
+  padding-right: 20px;
+}
+footer a {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

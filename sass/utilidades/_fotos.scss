@@ -1,0 +1,26 @@
+// Estilos html fotos
+@import "variables";
+@import "mixin";
+@import "extend";
+
+.grid-container {
+    padding: 15px 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: $color-fondo;
+    @extend %bordes;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    img {
+        @include medidas (100%, 100%);
+        display: block;
+}
+}

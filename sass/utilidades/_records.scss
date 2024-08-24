@@ -1,0 +1,18 @@
+// Estilos de html Records
+@import "variables";
+@import "mixin";
+
+.mainRec {
+    background-color: $color-fondo;
+    padding: 15px;
+ul {
+        list-style: none;
+        padding-top: 15px;
+        padding-bottom: 15px;
+}
+}
+
+.fotorec {
+    @include medidas (35rem, 25rem);
+    padding-left: 30px;
+}
